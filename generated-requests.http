@@ -1,0 +1,7 @@
+###
+
+< {%
+    request.variables.set("fullName", "Peter Pan")
+%}
+GET http://localhost:8080/users/{{fullName}}
+Accept: application/json
